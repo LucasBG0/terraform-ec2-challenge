@@ -6,4 +6,4 @@ instance = {
   "public_key_path" = "~/.ssh/terraform.pub"
 }
 
-ssh_allow_cidr_blocks = "192.1.1.1/32"
+ssh_allow_cidr_blocks = ["192.1.1.1/32"]

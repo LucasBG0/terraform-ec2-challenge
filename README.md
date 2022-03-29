@@ -7,8 +7,8 @@ Meu objetivo nesse desafio foi subir uma infra totalmente gerenciada pelo terraf
 * Terraform 1.1.7
 * AWS provider 4.8.0
 * Containers Docker:
- 1. Nginx como proxy reverso para o container da aplicação
- 2. React rodando um node.js server
+  1. Nginx como proxy reverso para o container da aplicação
+  2. React rodando um node.js server
  
 ---
  
@@ -42,7 +42,7 @@ instance = {
   "public_key_path" = "~/.ssh/terraform.pub"
 }
 
-ssh_allow_cidr_blocks = "179.214.12.153/32"
+ssh_allow_cidr_blocks = ["179.214.12.153/32"]
 ```
 
 * ssh_allow_cidr_blocks: Insira o seu IP público aqui, para que consiga acessar a instância via SSH.
