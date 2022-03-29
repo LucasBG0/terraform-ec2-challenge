@@ -1,0 +1,9 @@
+instance = {
+  "type"            = "t2.micro"
+  "name"            = "web-server"
+  "user_data_path"  = "scripts/init.sh"
+  "key_name"        = "my-terraform-key"
+  "public_key_path" = "~/.ssh/terraform.pub"
+}
+
+ssh_allow_cidr_blocks = "192.1.1.1/32"
